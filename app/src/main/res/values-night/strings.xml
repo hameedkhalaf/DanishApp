@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="product_name_req">اسم المنتج  <font color='#FF0000'>*</font></string>
+    <string name="supplier">اسم التاجر</string>
+    <string name="item_price_req">سعر المفرق</string>
+    <string name="quantity_req">اسم المستودع  "</string>
+    <string name="add_new_item">إضافة منتج جديد</string>
+    <string name="delete">حذف</string>
+    <string name="edit_user">تعديل مستخدم</string>
+    <string name="orders">المبيعات</string>
+    <string name="pwd_changred">تم تغيير كلمة السر بنجاح</string>
+    <string name="product_updated">تم تعديل المنتج بنجاح</string>
+    <string name="product_added">تم إضافة المنتج بنجاح</string>
+    <string name="product_deleted">تم الحذف بنجاح</string>
+</resources>

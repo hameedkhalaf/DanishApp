@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/search"
+    android:title="@string/search"
+    android:icon="@android:drawable/ic_menu_search"
+    app:showAsAction="always|collapseActionView"
+    app:actionViewClass="android.widget.SearchView"
+    />
+    <item
+        android:id="@+id/order"
+        android:icon="@drawable/ic_order_menu"
+        android:title="@string/orders"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/add_user"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/add_user"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/manage_user"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/manage_user"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/change_password"
+        android:icon="@android:drawable/ic_secure"
+        android:title="@string/change_password"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/logout"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/logout"
+        app:showAsAction="never"/>
+</menu>

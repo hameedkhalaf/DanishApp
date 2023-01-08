@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <data>
+        <import
+           alias="base"
+            type="com.hameed.danish.domain.UserKt" />
+        <variable
+            name="viewmodel"
+            type="com.hameed.danish.viewmodels.OverviewViewModel" />
+        <variable
+            name="user"
+            type="com.hameed.danish.domain.User" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layoutDirection="rtl"
+        >
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:padding="8dp">
+
+        <TextView
+            android:layoutDirection="rtl"
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_alignParentStart="true"
+        android:text="@{base.getFormattedName(user)}"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="#000000"
+            android:textStyle="bold"/>
+        <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@{base.getFormattedUserName(user)}"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+        <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@{base.getFormattedID(user)}"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:background="@color/purple_700"
+            android:text="@{base.getFormattedType(user)}"
+            android:textColor="@color/yellow_700"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+</layout>
